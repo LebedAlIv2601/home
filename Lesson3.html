@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Сайт для обучения</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+	<h1>Калькулятор(Первый!)</h1>
+	<input class="form-control" size = "30" type="text" id = "var1" placeholder="1 переменная"><br>
+	<input class="form-control" type="text" id = "var2" placeholder="2 переменная"> <br>   
+	<input class="btn btn-primary" type="submit" value = "+" id = "btn+" size="100">
+	<input class="btn btn-primary" type="submit" value = "-" id = "btn-">
+	<input class="btn btn-primary" type="submit" value = "*" id = "btn*">
+	<input class="btn btn-primary" type="submit" value = "/" id = "btn/"><br>
+	<input type="text" id = "result"><br>
+	<script>
+		function plus(){
+			var a,b;
+			a = document.getElementById("var1").value;
+			console.log(a);
+			b = document.getElementById("var2").value;
+			console.log(b);
+			a = Number(a) + Number(b);
+			console.log(a);
+			document.getElementById("result").value = a;
+		}
+		document.getElementById("btn+").onclick = plus;
+				function minus(){
+			var a,b;
+			a = document.getElementById("var1").value;
+			console.log(a);
+			b = document.getElementById("var2").value;
+			console.log(b);
+			a = Number(a) - Number(b);
+			console.log(a);
+			document.getElementById("result").value = a;
+		}
+		document.getElementById("btn-").onclick = minus;
+		function umnozhenie(){
+			var a,b;
+			a = document.getElementById("var1").value;
+			console.log(a);
+			b = document.getElementById("var2").value;
+			console.log(b);
+			a = Number(a) * Number(b);
+			console.log(a);
+			document.getElementById("result").value = a;
+		}
+		document.getElementById("btn*").onclick = umnozhenie;
+		function delenie(){
+			var a,b;
+			a = document.getElementById("var1").value;
+			console.log(a);
+			b = document.getElementById("var2").value;
+			console.log(b);
+			a = Number(a) / Number(b);
+			console.log(a);
+			document.getElementById("result").value = a;
+		}
+		document.getElementById("btn/").onclick = delenie;
+	</script>
+</body>
+</html>
