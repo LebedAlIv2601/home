@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>WEB-технологии</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+</head>
+<body>
+	<h1>WEB-технологии</h1>
+	<p>Хочешь знать, что это?</p>
+	<input class="btn btn-success" type="submit" value = "Жми сюда!" id = "btn">
+	<div id = "littleText">web - распределенная система, предоставляющая доступ к связанным между собой документам, расположенным на различных компьютерах, подключенных к Интернету.</div>
+	<input class="btn btn-danger" type="submit" value = "Ещё сюда посмотри!" id = "btn1">
+	<img src="http://www.vip-tv.ru/uploads/ckeditor/pictures/16/content_kollektivniy-dostup-internet.jpeg" alt="" id = "image">
+	<a href="https://ru.wikiversity.org/wiki/%D0%92%D0%B5%D0%B1-%D1%82%D0%B5%D1%85%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D0%B8" id = "ssilka">Остальную информацию ищите здесь. Мне лень было делать дальше</a>
+	<script>
+		document.getElementById("littleText").style.display = 'none';
+		document.getElementById("btn1" ).style.display = 'none';
+		document.getElementById("image" ).style.display = 'none';
+		document.getElementById("ssilka" ).style.display = 'none';
+		function textshow(){
+			document.getElementById("littleText" ).style.display = 'block';
+			document.getElementById("btn1" ).style.display = 'block';
+		}
+		document.getElementById("btn").onclick = textshow;
+		function textshow1(){
+			document.getElementById("image").style.display = 'block';
+			document.getElementById("ssilka" ).style.display = 'block';
+		}
+		document.getElementById("btn1").onclick = textshow1;
+	</script>
+</body>
+</html>

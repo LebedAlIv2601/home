@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Треугольник</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+</head>
+<body>
+	<h1>Проверка на существование треугольника</h1>
+	<p>Введите значения длин сторон для определения существования треугольника</p>
+	<input class="text" size = "30" type="text" id = "var1" placeholder="1 сторона"><br>
+	<input class="text" size = "30" type="text" id = "var2" placeholder="2 сторона"> <br>   
+	<input class="text" size = "30" type="text" id = "var3" placeholder="3 сторона"> <br>   
+	<input class="btn btn-outline-primary" type="submit" value = "Определить" id = "btn">
+	<script>
+		function opred(){
+			var a,b,c;
+			a = document.getElementById("var1").value;
+			b = document.getElementById("var2").value;
+			c = document.getElementById("var3").value;
+			if (((a+b)>c)&&((a+c)>b)&&((b+c)>a)){
+				console.log("Существует");
+			}
+			else{
+				console.log("Не существует");
+			}
+		}
+		document.getElementById("btn").onclick = opred;
+	</script>
+</body>
+</html>
