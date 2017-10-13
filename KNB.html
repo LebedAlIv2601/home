@@ -6,7 +6,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 </head>
 <body>
-	<h1>Игра "Камень, Ножницы, Бумага". Узнай, кто круче: ты или робот.</h1>
+	<h1>Игра "Камень, Ножницы, Бумага". Узный, кто круче: ты или робот.</h1>
 	<button type="button" class="btn btn-primary" id = 'btnK'>Камень</button>
 	<button type="button" class="btn btn-primary" id = 'btnN'>Ножницы</button>
 	<button type="button" class="btn btn-primary" id = 'btnB'>Бумага</button>
@@ -29,6 +29,8 @@ console.log(znaki[znak]);
 			    alert('Поражение!')
 			  break;
 			}
+				znak = Math.floor(Math.random() * 3);
+				console.log(znaki[znak]);
 		}
 		document.getElementById("btnK").onclick = kamen
 		function bumaga(){
@@ -45,6 +47,8 @@ console.log(znaki[znak]);
 			    alert('Поражение!')
 			  break;
 			}
+			znak = Math.floor(Math.random() * 3);
+console.log(znaki[znak]);
 		}
 		document.getElementById("btnB").onclick = bumaga
 		function nozhnizi(){
@@ -61,6 +65,8 @@ console.log(znaki[znak]);
 			    alert('Поражение!')
 			  break;
 			}
+			znak = Math.floor(Math.random() * 3);
+console.log(znaki[znak]);
 		}
 		document.getElementById("btnN").onclick = nozhnizi			
 	</script>
