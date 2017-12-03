@@ -1,0 +1,29 @@
+.black{
+	height: 500px;
+	width: 100px;
+	background-color: #000;
+}
+.light{
+	height: 50px;
+	width: 50px;
+	border-radius: 80px;
+	background-color: #fff;
+}
+
+#red{
+		padding-top: 20px;
+	margin-left: 10px;
+background-color: #a10000;
+}
+
+#yellow{
+		padding-top: 20px;
+	margin-left: 10px;
+	background-color: #a18600;
+}
+#green{
+	padding-top: 20px;
+	margin-left: 10px;
+
+	background-color: #25a100;
+}
