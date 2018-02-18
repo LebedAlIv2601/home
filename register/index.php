@@ -31,9 +31,8 @@ if(isset($_POST['login'])){
 	<input type="password" name="pass" placeholder="Пароль" class="pole"><br> 
 	<input type="password" name="repass" placeholder="Повторите пароль" class="pole"><br> 
 	<input type="email" name="email" placeholder="email" class="pole"><br> 
-	<input type="submit" value="РЕгистрация" class="btn btn-success"> <br>
-	<input type="submit" value="ВОйти" class="btn btn-primary">
-	<a href="auth.php" type="submit" value="ВОйти" class="btn btn-primary"></a>
+	<input type="submit" value="Регистрация" class="btn btn-success"> <br>
+	<a href="auth.php" type="submit" value="Войти" class="btn btn-primary">Войти</a>
 		</div>
 </body>
 </html>
