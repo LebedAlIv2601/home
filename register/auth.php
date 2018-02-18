@@ -23,8 +23,8 @@ if(isset($_POST['login'])){
 	<form action="index.php" method="post">
 	<input type="text" name="login" placeholder="Логин" class="pole"><br> 
 	<input type="password" name="pass" placeholder="Пароль" class="pole"><br> 
-	<input type="submit" value="ВОйти" class="btn btn-success"> <br>
-	<input type="submit" value="РЕгистрация" class="btn btn-primary" href="index.php">
+	<input type="submit" value="Войти" class="btn btn-success"> <br>
+	<a href="index.php" type="submit" value="Регистрация" class="btn btn-primary">Регистрация</a>
 </div>
 </body>
 </html>
